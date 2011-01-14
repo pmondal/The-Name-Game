@@ -3,13 +3,17 @@
 ## Add your name
 
 Fork this repository to your github account.
+
 Clone your fork to your local machine
 
     git clone git@github.com:YOUR_GITHUB_USERNAME/The-Name-Game.git
 
 Create a feature branch to add your name: `git checkout -b name-feature`
+
 Change `names.txt` and add your name to the end of the list on a new line.
+
 Stage the file to be committed. `git add names.text`
+
 Commit your change
 
     git commit -m "Added YOUR_NAME to the list of names."
