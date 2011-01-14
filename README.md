@@ -6,8 +6,9 @@
 2. Clone your fork to your local machine `git clone git@github.com:YOUR_GITHUB_USERNAME/The-Name-Game.git`
 3. Create a feature branch to add your name: `git checkout -b name-feature`
 4. Change `names.txt` and add your name to the end of the list on a new line.
-5. Commit your change `git commit -m "Added YOUR_NAME to the list of names."`
-6. Push your branch to github `git push origin YOUR_NAME`
+5. Stage the file to be committed. `git add names.text`
+6. Commit your change `git commit -m "Added YOUR_NAME to the list of names."`
+7. Push your branch to github `git push origin name-feature`
 
 ## Complete your list
 
@@ -18,8 +19,11 @@
 2. See what is in their repository.
 
     git fetch USERNAME
-    see what branches you now have
-    anything under remotes/ is a full copy of a remote branch.
+
+    _see what branches you now have_
+
+    _anything under remotes/ is a full copy of a remote branch._
+
     git branch -a
 
 3. Rebase their commits into your feature branch. ()
@@ -29,6 +33,7 @@
 4. Resolve a merge conflict. In this case you want to keep all the names so just remove the lines added by the merge.
 
     Frank
+
     YOUR_NAME
 
 5. Tell git the conflict has been resolved.
