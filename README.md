@@ -22,22 +22,22 @@ Push your branch to github
 
     git push origin name-feature
 
-## Complete your list
+## Merge your list
 
 Add a teammate's fork so you can pull their code (substitute their github username).
 
-    git remote add USERNAME git@github.com:USERNAME/The-Name-Game.git
+    git remote add jbrown git@github.com:jbrown/The-Name-Game.git
 
 See what is in their repository.
 
-    git fetch USERNAME
+    git fetch jbrown
     # see what branches you now have
     # anything under remotes/ is a full copy of a remote branch.
     git branch -a
 
 Rebase their commits into your feature branch. ()
 
-    git rebase USERNAME/name-feature
+    git rebase jbrown/name-feature
 
 Resolve a merge conflict. In this case you want to keep all the names so just remove the lines added by the merge.
 
@@ -48,9 +48,3 @@ Tell git the conflict has been resolved.
 
     git add names.txt
     git rebase --continue
-
-Push your updated branch to your github fork
-
-    git push origin name-feature
-
-Repeat for each teammate until you have the full list.
